@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState , createContext} from "react";
+import React, { useContext, useEffect, useState ,} from "react";
  export const API_URL ="http://www.omdbapi.com/?apikey=b77f21a5";
  const AppContext = React.createContext();
  const AppProvider = ({children})=>{

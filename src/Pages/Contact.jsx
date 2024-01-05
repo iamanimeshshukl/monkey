@@ -25,7 +25,7 @@ let name, value;
     e.preventDefault();
     const {firstname,lastname,email,phone,message} = userdata;
     if(firstname && lastname && email && phone && message){
-    const res = await fetch("https://anichat-17bc4-default-rtdb.firebaseio.com/userDataRecords.json",
+    const res = await fetch("https://anichat-17bc4-default-rtdb.firebaseio.com//userDataRecords.json",
     {
       method : "POST",
       headers :{
