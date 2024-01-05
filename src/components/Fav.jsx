@@ -5,7 +5,7 @@ const Fav = () => {
   const [popularMovies, setPopularMovies] = useState([]);
 
   useEffect(() => {
-    fetch("https://api.themoviedb.org/3/movie/popular?api_key=be96a7bcbac9ba984645fedb0d6a2695")
+    fetch("https://api.themoviedb.org/3/movie/popular?api_key=(your_api_key)")
       .then(res => res.json())
       .then(data => setPopularMovies(data.results))
       .catch(error => console.error('Error fetching popular movies:', error));
